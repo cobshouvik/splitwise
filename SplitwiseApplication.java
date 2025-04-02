@@ -13,5 +13,7 @@ public class SplitwiseApplication {
         transactionManager.addExpense("EXPENSE u4 1200 4 u1 u2 u3 u4 PERCENT 40 20 20 20");
         transactionManager.show("u1");
         transactionManager.show();
+        transactionManager.addExpense("EXPENSE u4 1200 4 u1 u2 u3 u4 PERCENT 20 20 20 20");
+        // transactionManager.addExpense("EXPENSE u4 1200 4 u1 u2 u3 u4 PERCENT 20 20 20 20");
     }
 }

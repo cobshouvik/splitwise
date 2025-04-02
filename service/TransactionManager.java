@@ -38,6 +38,7 @@ public class TransactionManager {
         Transaction transaction = parseTransaction(ledger);
         if(transaction==null) {
             System.out.println("Invalid transaction ledger : " + ledger);
+            return;
         }
         this.transactionRepository.addTransaction(transaction);
         this.activeDebtRepository.handleTransaction(transaction);
