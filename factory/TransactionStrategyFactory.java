@@ -3,7 +3,7 @@ public class TransactionStrategyFactory {
         switch(type) {
             case EQUAL : return new EqualTransactionStrategy();
             case EXACT : return new ExactTransactionStrategy();
-            case PERCENTAGE : return new PercentageTransactionStrategy();
+            case PERCENT : return new PercentageTransactionStrategy();
             default : return null;
         }
     }

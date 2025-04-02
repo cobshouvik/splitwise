@@ -11,6 +11,6 @@ public class DebtDisplay{
 
     public String toString() {
         //User4 owes User1: 250
-        return String.format("%s owes %s: %2d", this.owedBy, this.owedTo, this.amount);
+        return String.format("%s owes %s: %s", this.owedBy, this.owedTo, this.amount);
     }
 }

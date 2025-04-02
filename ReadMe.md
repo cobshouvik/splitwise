@@ -78,21 +78,27 @@ SHOW
 Sample Output
 No balances
 No balances
+
 User4 owes User1: 250
+
 User2 owes User1: 250
 User3 owes User1: 250
 User4 owes User1: 250
+
 User2 owes User1: 620
 User3 owes User1: 1130
 User4 owes User1: 250
+
 User1 owes User4: 230
 User2 owes User1: 620
 User3 owes User1: 1130
+
 User1 owes User4: 230
 User2 owes User1: 620
 User2 owes User4: 240
 User3 owes User1: 1130
 User3 owes User4: 240
+
 Expectations
 Make sure that you have a working and demonstrable code
 Make sure that the code is functionally correct

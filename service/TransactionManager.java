@@ -13,7 +13,7 @@ public class TransactionManager {
         this.transactionStrategyMap = Map.of(
             TransactionType.EQUAL , TransactionStrategyFactory.getTransactionStrategy(TransactionType.EQUAL),
             TransactionType.EXACT , TransactionStrategyFactory.getTransactionStrategy(TransactionType.EXACT),
-            TransactionType.PERCENTAGE , TransactionStrategyFactory.getTransactionStrategy(TransactionType.PERCENTAGE)
+            TransactionType.PERCENT , TransactionStrategyFactory.getTransactionStrategy(TransactionType.PERCENT)
         );
     }
 

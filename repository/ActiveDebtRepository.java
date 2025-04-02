@@ -40,9 +40,11 @@ public class ActiveDebtRepository{
 
     public void handleTransaction(Transaction transaction) {
         String payer = transaction.getPayer();
-        Map<String, Double> activeDebtOfPayer = activeDebts.get(payer);
+        Map<String, Double> activeDebtOfPayer = activeDebts.getOrDefault(payer, new HashMap<>());
         for(Map.Entry<String, Double> payeeDetailEntry : transaction.getPayeeDetails().entrySet()) {
             String payeeName = payeeDetailEntry.getKey();
+            if(payer.equals(payeeName))
+                continue;
             double debtAmount = payeeDetailEntry.getValue();
             double existingReverseDebt = activeDebtOfPayer.getOrDefault(payeeName, (double)0);
             if(existingReverseDebt > 0 ) {
